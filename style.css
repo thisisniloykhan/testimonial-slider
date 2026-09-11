@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(210, 15%, 6%);
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+}
+
+.testimonial-container {
+  position: relative;
+  min-height: 200px;
+  background-color: hsl(213, 40%, 10%);
+  color: hsl(210deg 10% 90%);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(250, 250, 250, 0.3);
+  width: clamp(150px, 90vw, 500px);
+  margin: 5px;
+  padding: 40px clamp(10px, 5vw, 20px);
+}
+
+#img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  object-position: 50% 20%;
+  border-radius: 50%;
+}
+
+.username {
+  color: hsl(240deg 95% 62%);
+  font-size: 13px;
+  font-weight: 100;
+}
+
+#left-btn,
+#right-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  background-color: hsl(210, 20%, 100%, 0.04);
+  border: none;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+
+  box-shadow: 0 2px 8px hsl(0 0% 0% / 0.2);
+
+  transition: background-color 0.2s ease;
+}
+
+#left-btn {
+  left: 0;
+  translate: -10px -50%;
+}
+
+#right-btn {
+  right: 0;
+  translate: 10px -50%;
+}
+
+#left-btn:hover,
+#right-btn:hover {
+  background-color: hsl(210, 20%, 100%, 0.08);
+}
+
+#left-icon,
+#right-icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  filter: brightness(0) saturate(100%) invert(39%) sepia(96%) saturate(1800%)
+    hue-rotate(210deg) brightness(95%) contrast(100%);
+}
