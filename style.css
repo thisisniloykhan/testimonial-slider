@@ -5,11 +5,42 @@
 body {
   margin: 0;
   background-color: hsl(210, 15%, 6%);
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-family: cursive;
+}
+
+.title {
+  flex: start;
+  margin-right: auto;
+  margin: 50px 0px 10px;
+}
+
+.title-1 {
+  color: hsl(200, 100%, 50%);
+}
+
+.title-2 {
+  color: hsl(218deg 45% 40%);
+}
+
+.title-3 {
+  color: hsl(240deg 95% 62%);
+}
+
+.title-4 {
+  color: hsl(255deg 85% 30%);
+}
+
+.title-5 {
+  color: hsl(340deg 100% 40%);
+}
+
+.title-6 {
+  color: hsl(145deg 100% 25%);
 }
 
 .testimonial-container {
